@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive ArcGIS Map</title>
+    
+    <!-- ArcGIS Embeddable Map Component -->
+    <script type="module" src="https://js.arcgis.com/embeddable-components/4.33/arcgis-embeddable-components.esm.js"></script>
+
+    <!-- Optional: Basic styling to make it full-screen -->
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: Arial, sans-serif;
+        }
+        arcgis-embedded-map {
+            height: 100%;
+            width: 100%;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- ArcGIS Embedded Map -->
+    <arcgis-embedded-map
+        item-id="04d87becb3db4259ba9f67220e107641"
+        theme="light"
+        heading-enabled
+        legend-enabled
+        center="-77.03016611737523,38.900617919878016"
+        scale="144447.638572"
+        portal-url="https://utoronto.maps.arcgis.com">
+    </arcgis-embedded-map>
+</body>
+</html>
